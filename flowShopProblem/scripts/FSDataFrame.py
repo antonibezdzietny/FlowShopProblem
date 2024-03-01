@@ -8,7 +8,7 @@ import numpy as np
 @dataclass
 class FSDataFrame:
     n_jobs       : int = 0
-    m_machines   : int = 0
+    n_machines   : int = 0
     init_seed    : int = 0
     up_boundary  : int = 0
     low_boundary : int = 0
