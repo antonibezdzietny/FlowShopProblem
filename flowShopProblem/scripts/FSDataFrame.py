@@ -12,6 +12,9 @@ class FSDataFrame:
     init_seed    : int = 0
     up_boundary  : int = 0
     low_boundary : int = 0
+    tasks_index  : np.ndarray = field(
+        default_factory=lambda: np.zeros(shape=(int)) 
+    )
     processing_time : np.ndarray = field(
         default_factory=lambda: np.zeros(shape=(int, int))  # type: ignore
     )

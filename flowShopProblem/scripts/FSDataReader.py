@@ -54,6 +54,8 @@ class FSDataReader:
             data_line = [int(x) for x in line.split()]
             data_frame.processing_time[i, :] = data_line
 
+        data_frame.tasks_index = np.arange(data_frame.processing_time.shape[1])
+
 
     def readData(self, n_set : int = 0) -> FSDataFrame:
         data_frame = FSDataFrame()   
