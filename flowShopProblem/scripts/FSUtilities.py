@@ -75,7 +75,7 @@ class FSSummarizer:
         # Colors picker 
         colors = plt.cm.tab20(np.linspace(0, 1, data_frame.n_jobs))
 
-        # 
+        # Display job diagram
         for i, machine in enumerate(completion_array):
             size_y = 0.9
             pos_y_box = i - size_y / 2 + 1
